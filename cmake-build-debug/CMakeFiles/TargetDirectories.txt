@@ -1,0 +1,3 @@
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/cmake-build-debug/CMakeFiles/proj4_89.dir

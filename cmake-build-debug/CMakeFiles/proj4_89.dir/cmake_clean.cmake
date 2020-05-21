@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/proj4_89.dir/src/main.c.o"
   "CMakeFiles/proj4_89.dir/src/HashTable.c.o"
-  "CMakeFiles/proj4_89.dir/src/Vector.cpp.o"
+  "CMakeFiles/proj4_89.dir/src/Vector.c.o"
   "CMakeFiles/proj4_89.dir/tests/testhash.cpp.o"
   "CMakeFiles/proj4_89.dir/tests/testvector.cpp.o"
   "proj4_89.pdb"

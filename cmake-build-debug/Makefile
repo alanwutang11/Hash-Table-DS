@@ -150,32 +150,32 @@ src/HashTable.c.s:
 	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/HashTable.c.s
 .PHONY : src/HashTable.c.s
 
-src/Vector.o: src/Vector.cpp.o
+src/Vector.o: src/Vector.c.o
 
 .PHONY : src/Vector.o
 
 # target to build an object file
-src/Vector.cpp.o:
-	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.cpp.o
-.PHONY : src/Vector.cpp.o
+src/Vector.c.o:
+	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.c.o
+.PHONY : src/Vector.c.o
 
-src/Vector.i: src/Vector.cpp.i
+src/Vector.i: src/Vector.c.i
 
 .PHONY : src/Vector.i
 
 # target to preprocess a source file
-src/Vector.cpp.i:
-	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.cpp.i
-.PHONY : src/Vector.cpp.i
+src/Vector.c.i:
+	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.c.i
+.PHONY : src/Vector.c.i
 
-src/Vector.s: src/Vector.cpp.s
+src/Vector.s: src/Vector.c.s
 
 .PHONY : src/Vector.s
 
 # target to generate assembly for a file
-src/Vector.cpp.s:
-	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.cpp.s
-.PHONY : src/Vector.cpp.s
+src/Vector.c.s:
+	$(MAKE) -f CMakeFiles/proj4_89.dir/build.make CMakeFiles/proj4_89.dir/src/Vector.c.s
+.PHONY : src/Vector.c.s
 
 src/main.o: src/main.c.o
 

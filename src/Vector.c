@@ -69,5 +69,4 @@ bool VectorElementAppend(SVectorRef vector, void *elem){
 
 void VectorSort(SVectorRef vector, TVectorElementCompare compare){
     /* YOUR CODE HERE */
-    //qsort C standard library 
 }

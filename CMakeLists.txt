@@ -7,7 +7,7 @@ set(
         SOURCE_FILES
         src/main.c
         src/HashTable.c
-        src/Vector.cpp
+        src/Vector.c
 
         tests/testhash.cpp
         tests/testvector.cpp

@@ -83,18 +83,18 @@ CMakeFiles/proj4_89.dir/src/HashTable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj4_89.dir/src/HashTable.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/HashTable.c -o CMakeFiles/proj4_89.dir/src/HashTable.c.s
 
-CMakeFiles/proj4_89.dir/src/Vector.cpp.o: CMakeFiles/proj4_89.dir/flags.make
-CMakeFiles/proj4_89.dir/src/Vector.cpp.o: ../src/Vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alanwu11/Desktop/CLionProjects/proj4_89/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj4_89.dir/src/Vector.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj4_89.dir/src/Vector.cpp.o -c /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.cpp
+CMakeFiles/proj4_89.dir/src/Vector.c.o: CMakeFiles/proj4_89.dir/flags.make
+CMakeFiles/proj4_89.dir/src/Vector.c.o: ../src/Vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alanwu11/Desktop/CLionProjects/proj4_89/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/proj4_89.dir/src/Vector.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/proj4_89.dir/src/Vector.c.o   -c /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.c
 
-CMakeFiles/proj4_89.dir/src/Vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj4_89.dir/src/Vector.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.cpp > CMakeFiles/proj4_89.dir/src/Vector.cpp.i
+CMakeFiles/proj4_89.dir/src/Vector.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/proj4_89.dir/src/Vector.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.c > CMakeFiles/proj4_89.dir/src/Vector.c.i
 
-CMakeFiles/proj4_89.dir/src/Vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj4_89.dir/src/Vector.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.cpp -o CMakeFiles/proj4_89.dir/src/Vector.cpp.s
+CMakeFiles/proj4_89.dir/src/Vector.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/proj4_89.dir/src/Vector.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alanwu11/Desktop/CLionProjects/proj4_89/src/Vector.c -o CMakeFiles/proj4_89.dir/src/Vector.c.s
 
 CMakeFiles/proj4_89.dir/tests/testhash.cpp.o: CMakeFiles/proj4_89.dir/flags.make
 CMakeFiles/proj4_89.dir/tests/testhash.cpp.o: ../tests/testhash.cpp
@@ -126,7 +126,7 @@ CMakeFiles/proj4_89.dir/tests/testvector.cpp.s: cmake_force
 proj4_89_OBJECTS = \
 "CMakeFiles/proj4_89.dir/src/main.c.o" \
 "CMakeFiles/proj4_89.dir/src/HashTable.c.o" \
-"CMakeFiles/proj4_89.dir/src/Vector.cpp.o" \
+"CMakeFiles/proj4_89.dir/src/Vector.c.o" \
 "CMakeFiles/proj4_89.dir/tests/testhash.cpp.o" \
 "CMakeFiles/proj4_89.dir/tests/testvector.cpp.o"
 
@@ -135,7 +135,7 @@ proj4_89_EXTERNAL_OBJECTS =
 
 proj4_89: CMakeFiles/proj4_89.dir/src/main.c.o
 proj4_89: CMakeFiles/proj4_89.dir/src/HashTable.c.o
-proj4_89: CMakeFiles/proj4_89.dir/src/Vector.cpp.o
+proj4_89: CMakeFiles/proj4_89.dir/src/Vector.c.o
 proj4_89: CMakeFiles/proj4_89.dir/tests/testhash.cpp.o
 proj4_89: CMakeFiles/proj4_89.dir/tests/testvector.cpp.o
 proj4_89: CMakeFiles/proj4_89.dir/build.make

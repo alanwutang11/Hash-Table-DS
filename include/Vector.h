@@ -1,8 +1,8 @@
 #ifndef VECTOR_H 	 	    		
 #define VECTOR_H
 
-#include "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/stdlib.h"
-#include "../../../../../../Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stdbool.h"
+#include <stddef.h>
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C"{
@@ -26,6 +26,7 @@ void *VectorElement(SVectorRef vector, size_t index);
 bool VectorElementAppend(SVectorRef vector, void *elem);
 
 void VectorSort(SVectorRef vector, TVectorElementCompare compare);
+
 
 #ifdef __cplusplus
 }

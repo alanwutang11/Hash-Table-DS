@@ -6,3 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/include/HashTable.h
+stddef.h
+-
+stdbool.h
+-
+
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/include/Vector.h
+stddef.h
+-
+stdbool.h
+-
+
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/src/HashTable.c
+../include/HashTable.h
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/include/HashTable.h
+string.h
+-
+stdlib.h
+-
+stdio.h
+-
+../include/Vector.h
+/Users/alanwu11/Desktop/CLionProjects/proj4_89/include/Vector.h
+

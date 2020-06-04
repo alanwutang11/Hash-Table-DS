@@ -2,6 +2,9 @@
 #include <stdint.h>
 #include <string.h>
 
+#include <stdio.h>
+#include <stdlib.h>
+
 struct STRUCT_VECTOR_TAG{
     size_t DElementSize;
     size_t DSize;
@@ -52,7 +55,7 @@ void *VectorElement(SVectorRef vector, size_t index){
 
 bool VectorElementAppend(SVectorRef vector, void *elem){
     if(vector && elem){
-        if(vector->DCount == vector->DSize){
+        if(vector->DCount == vector->DSize){ //this is resizing
             size_t OldSize = vector->DSize;
             uint8_t *OldData = vector->DData;
             vector->DSize *= 2;
@@ -68,5 +71,5 @@ bool VectorElementAppend(SVectorRef vector, void *elem){
 }
 
 void VectorSort(SVectorRef vector, TVectorElementCompare compare){
-    /* YOUR CODE HERE */
+    qsort(vector->DData,vector->DCount,vector->DElementSize,compare);
 }

@@ -1,5 +1,8 @@
 //#include <gtest/gtest.h>
 //#include "../include/Vector.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//
 //
 //TEST(Vector, EmptyTest){
 //    SVectorRef Vector = VectorCreate(sizeof(int));
@@ -55,7 +58,25 @@
 //}
 //
 //TEST(Vector, SortTest){
-//    /* YOUR CODE HERE */
+//    SVectorRef Vector = VectorCreate(sizeof(int));
+//    ASSERT_TRUE(Vector != nullptr);
+//    srand(time(NULL));
+//
+//    for(int Index = 0; Index < 100; Index++){
+//        int *TempPtr;
+//        int R = rand();
+//        VectorElementAppend(Vector,&R);
+//    }
+//
+//    VectorSort(Vector,RevIntCompare);
+//
+//    for(int Index = 0; Index < 99; Index++){
+//        int *val = VectorElementAs(Vector,Index,int);
+//        int *valnext = VectorElementAs(Vector,Index+1,int);
+//        EXPECT_TRUE(*val > *valnext);
+//    }
+//    EXPECT_TRUE(VectorDestroy(Vector));
+//
 //}
 //
 //TEST(Vector, InvalidParameterTest){

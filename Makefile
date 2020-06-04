@@ -12,27 +12,41 @@ TESTBIN_DIR = ./testbin
 INCLUDE = -I $(INC_DIR) -I /opt/local/include
 TESTLDFLAGS = -L /opt/local/lib -lgtest_main -lgtest -lpthread
 CPPFLAGS        += -std=c++14
-CFLAGS          += -Wall
-PROJ_NAME       = proj3_89
-TESTMAP_NAME   = testmap
+PROJ_NAME       = proj4_89
+TESTHASH_NAME   = testhash
+TESTVECTOR_NAME = testvector
 
 
 MAIN_O        = $(OBJ_DIR)/main.o
 
-TESTMAP_O    = $(OBJ_DIR)/testmap.o
+TESTVECTOR_O    = $(OBJ_DIR)/testvector.o
 
-PROJ_O       = $(OBJ_DIR)/KeyValueMap.o
+TESTHASH_O    = $(OBJ_DIR)/testhash.o
 
-all: directories runtest $(BIN_DIR)/$(PROJ_NAME)
+HASH_O    = $(OBJ_DIR)/HashTable.o
 
-runtest: $(TESTBIN_DIR)/$(TESTMAP_NAME)
-	$(TESTBIN_DIR)/$(TESTMAP_NAME)
+VECTOR_O    =$(OBJ_DIR)/Vector.o
+
+PROJ_O       = $(HASH_O) $(VECTOR_O)
+
+all: directories runtestvector runtesthash $(BIN_DIR)/$(PROJ_NAME)
+
+
+runtestvector: $(TESTBIN_DIR)/$(TESTVECTOR_NAME)
+	$(TESTBIN_DIR)/$(TESTVECTOR_NAME)
+
+runtesthash: $(TESTBIN_DIR)/$(TESTHASH_NAME)
+	$(TESTBIN_DIR)/$(TESTHASH_NAME)
+
 
 $(BIN_DIR)/$(PROJ_NAME): $(PROJ_O) $(MAIN_O)
 	$(CXX) $(MAIN_O) $(PROJ_O) -o $(BIN_DIR)/$(PROJ_NAME) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)
 
-$(TESTBIN_DIR)/$(TESTMAP_NAME): $(PROJ_O) $(TESTMAP_O)
-	$(CXX) $(PROJ_O) $(TESTMAP_O) -o $(TESTBIN_DIR)/$(TESTMAP_NAME) $(CFLAGS) $(CPPFLAGS) $(TESTLDFLAGS)
+$(TESTBIN_DIR)/$(TESTVECTOR_NAME): $(PROJ_O) $(TESTVECTOR_O)
+	$(CXX) $(PROJ_O) $(TESTVECTOR_O) -o $(TESTBIN_DIR)/$(TESTVECTOR_NAME) $(CPPFLAGS) $(TESTLDFLAGS)
+
+$(TESTBIN_DIR)/$(TESTHASH_NAME): $(PROJ_O) $(TESTHASH_O)
+	$(CXX) $(PROJ_O) $(TESTHASH_O) -o $(TESTBIN_DIR)/$(TESTHASH_NAME) $(CPPFLAGS) $(TESTLDFLAGS)
 
 $(OBJ_DIR)/%.o: $(TESTS_DIR)/%.cpp
 	$(CXX) $(CFLAGS) $(CPPFLAGS) $(INCLUDE) -c $< -o $@

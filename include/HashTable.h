@@ -1,4 +1,4 @@
-#ifndef HASHTABLE_H 	 	    		
+#ifndef HASHTABLE_H
 #define HASHTABLE_H
 
 #include <stddef.h>
@@ -32,6 +32,22 @@ typedef struct STRUCT_HASH_TABLE_CREATE_DATA_TAG{
 typedef SHashTableCreateData * SHashTableCreateDataRef;
 typedef const SHashTableCreateData * SConstHashTableCreateDataRef;
 
+size_t HashFunctionOne(size_t key_as_num, size_t DTableSize);
+
+size_t HashFunctionTwo(size_t key_as_num, size_t DTableSize);
+
+size_t GetIdx(SConstHashTableRef table, const void* key, int whichHash);
+
+void TableResize(SHashTableRef HashTable);
+
+SHashTableIteratorRef HashTableEndMostNode(SHashTableRef HashTable, SHashTableConstIteratorRef iter);
+
+SHashTableIteratorRef HashTableNodeCreate(SHashTableRef HashTable);
+
+void HashTableNodeDestroy(SHashTableRef HashTable, SHashTableIteratorRef Node);
+
+
+
 SHashTableRef HashTableCreate(SConstHashTableCreateDataRef data);
 
 bool HashTableDestroy(SHashTableRef table);
@@ -39,6 +55,10 @@ bool HashTableDestroy(SHashTableRef table);
 size_t HashTableSize(SConstHashTableRef table);
 
 const void *HashTableGet(SConstHashTableRef table, const void *key);
+
+void NodePlace(SHashTableRef HashTable, SHashTableIteratorRef Node, size_t count);
+
+bool HashTableNodeInsert(SHashTableRef HashTable, const void* key, const void* value);
 
 bool HashTableInsert(SHashTableRef table, const void *key, const void *value);
 

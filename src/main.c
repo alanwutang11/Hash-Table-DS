@@ -255,3 +255,5 @@ void *InstructorInformationCopy(const void *value){
     memcpy(RetValue,value,sizeof(SInstructorInformation));
     return RetValue;
 }
+
+

@@ -7,3 +7,6 @@ Google Tests were used to test the code.
 Source code for this project was provided. 
 
 The files I completed on my own are: 
+
+-HashTable.c and Vector.c
+-Makefile

@@ -6,7 +6,12 @@ Google Tests were used to test the code.
 
 Source code for this project was provided. 
 
-The files I completed on my own are: 
 
+
+### The files I completed on my own are: 
 -HashTable.c and Vector.c
 -Makefile
+-TestHash.cpp and TestVector.cpp
+
+## Some Notes: 
+To handle collisions, Cuckoo Hashing was used. 
